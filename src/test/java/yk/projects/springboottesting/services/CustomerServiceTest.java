@@ -46,8 +46,6 @@ class CustomerServiceTest {
 
         when(customerRepository.findAll()).thenReturn(customers);
 
-
-
         List<CustomerDTO> allCustomers = customerService.getAllCustomers();
 
         assertEquals(1L, allCustomers.get(0).getId());
